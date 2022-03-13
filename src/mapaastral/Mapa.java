@@ -50,7 +50,7 @@ public class Mapa {
         txt= txt.substring(ini, fim);        
         ini = Integer.parseInt(txt.split("°")[0]);
         txt = txt.split("°")[1];       
-        return  subst+" em "+ Casas.casa(ini / 30 + 1) + " posição: "+ ini % 30 + "°" + txt+"\n";
+        return  subst+" em "+ Casas.casa(ini) + " posição: "+ ini % 30 + "°" + txt+"\n";
     }
     
     
